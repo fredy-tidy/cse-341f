@@ -7,6 +7,10 @@ const port = 3000;
 app.get('/', (req, res) => {
   res.send("Test node server, and test nodemon");
 });
+
+app.get('/nuevo', (req, res) => {
+    res.send("nuevo Test node server, and test nodemon");
+  });
  
 app.listen(process.env.PORT || port, () => {
   console.log('Web Server is listening at port ' + (process.env.PORT || 3000));
